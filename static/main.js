@@ -73,39 +73,44 @@ $('.orbit-next').click(function() {
     console.log("CLICKED!");
 });
 
-/* SKROLLR ============================================= */
-( function( $ ) {
 
-    // Setup variables
-    $window = $(window);
-    $slide = $('.homeSlide');
-    $slideTall = $('.homeSlideTall');
-    $slideTall2 = $('.homeSlideTall2');
-    $body = $('body');
-    
-    // Init Skrollr
-    var s = skrollr.init({
-        render: function(data) {
-        
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
-    });
-    
-    // Get window size
-    winH = $window.height();
-    
-    // Keep minimum height 550
-    if(winH <= 550) {
-        winH = 550;
-    } 
-    
-    // Resize our slides
-    $slide.height(winH);
-    $slideTall.height(winH*2);
-    $slideTall2.height(winH*3);
-    
-    // Refresh Skrollr after resizing our sections
-    s.refresh($('.homeSlide'));
-        
-} )( jQuery );
+
+/* SKROLLR ============================================= */
+
+// Setup variables
+$window = $(window);
+$slide = $('.homeSlide');
+
+$body = $('body');
+
+// Init Skrollr
+var s = skrollr.init({
+    render: function(data) {},
+    forceHeight: true,
+});
+
+
+// Get window size
+winH = $window.height();
+
+// Keep minimum height 550
+if(winH <= 550) {
+    winH = 550;
+} 
+
+// Resize our slides
+$slide.height(winH);
+
+// Refresh Skrollr after resizing our sections
+s.refresh($('.homeSlide'));
+
+
+
+$('.filter').click(function() {
+    console.log("filter has been hit!");
+    s.refresh($('.portfolioSlide'));
+})
+
+
+
+
