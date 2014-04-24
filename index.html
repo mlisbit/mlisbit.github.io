@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="static/reset.css">
+        <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/5.2.2/css/foundation.css">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    
+    <nav>  <!-- main page nav -->
+        <div class="menu">
+            <ul> 
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="nav-contact-link">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </div>
+
+        <div class="contact"> <!-- Contact Menu -->
+            <div class="contact-pic"></div>
+            <div class="contact-panel">
+                <a href="https://github.com/mlisbit"><div class="contact-link"><center><p>Github</p></center></div></a>
+                <a href="https://www.linkedin.com/pub/maciej-lis/61/769/493"><div class="contact-link"><center><p>Linkedin</p></center></div></a>
+                <a href="https://twitter.com/mlisbit"><div class="contact-link"><center><p>Twitter</p></center></div></a>
+                <a href="mailto:mlisbit@gmail.com"><div class="contact-link"><center><p>Email</p></center></div></a>
+            </div>
+        </div>
+        
+        <div class="menu-button">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav> <!-- End nav -->
+    
+    <body>
+        <section id="slide-1" class="homeSlide"> <!-- Landing Page -->
+            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+                <div class="hsContainer">
+                    <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0.5" data-anchor-target="#slide-1 h2">
+                        <h2>Maciej Lis</h2>
+                        <p>Development/Design.</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- End landing page -->
+        
+        <div class="section-label row" id="portfolio">
+            <h2>Portfolio</h2>
+        </div>
+        
+        <div class="row"> <!-- Hold the filter buttons  -->
+            <div class="container">
+                <div class="filter filter-button" data-filter=".web">Web</div>
+                <div class="filter filter-button" data-filter=".games">Games</div>
+                <div class="filter filter-button" data-filter=".robotics">Robotics</div>
+                <div class="filter filter-button" data-filter=".robotics">Hackathon Entries</div>
+                <div class="filter filter-button" data-filter="all">All</div>
+            </div>
+        </div>
+            
+        <div class="row"> <!--Hold the project thumbs -->
+              <div class="thumb small-6 medium-4 large-4 columns mix web end ">
+                  <!-- <span data-tooltip class="has-tip" title="Tooltips are awesome, you should totally use them!"></span> -->
+                  <div data-tooltip class="overlay trigger cshub toggle-slideit has-tip" title="York Universities Official Computer Science Club site."><i class="fa fa-eye"></i></div>
+                  <img src="images/cshub_thumb_1.png" alt="screenshot">
+              </div>
+              <div class="thumb small-6 medium-4 large-4 columns mix web end">
+                  <div data-tooltip class="overlay trigger yuroverteamsite toggle-slideit has-tip" title="York Universities Official Rover Team site."><i class="fa fa-eye"></i></div>
+                  <img src="images/yuroverteam_thumb_2.png" alt="screenshot">
+              </div>
+              <div class="thumb small-6 medium-4 large-4 columns mix web end">
+                  <div data-tooltip class="overlay trigger blueprint toggle-slideit has-tip" title="Blueprint Properties Inc. site."><i class="fa fa-eye"></i></div>
+                  <img src="images/blueprint_thumb_3.png" alt="screenshot">
+              </div>
+              <div class="thumb small-6 medium-4 large-4 columns mix games end">
+                  <div data-tooltip class="overlay trigger snakegame toggle-slideit has-tip" title="Snake game."><i class="fa fa-eye"></i></div>
+                  <img src="images/snake_thumb_1.png" alt="screenshot">
+              </div>
+              <div class="thumb small-6 medium-4 large-4 columns mix games end">
+                  <div data-tooltip class="overlay trigger towergame toggle-slideit has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
+                  <img src="images/tower_thumb_1.png" alt="screenshot">
+              </div>
+        </div>
+        <div id="slideit-menu">
+          <div class="slideit-panel cshub">
+            <ul class="orbit" data-orbit data-options="timer: false;">
+                <li>
+                  <img src="images/cshub_thumb_1.png" alt="slide 1" />
+                  <div class="orbit-caption">
+                    Works on mobile devices.
+                  </div>
+                </li>
+                <li>
+                  <img src="images/cshub_thumb_2.png" alt="slide 2" />
+                  <div class="orbit-caption">
+                    Join the over 60 members, and create/edit your own profile!
+                  </div>
+                </li>
+                <li>
+                  <img src="images/cshub_thumb_3.png" alt="slide 3" />
+                  <div class="orbit-caption">
+                    Manage all content easily with Djano's CMS.
+                  </div>
+                </li>
+                <li>
+                  <img src="images/cshub_thumb_4.png" alt="slide 4" />
+                  <div class="orbit-caption">
+                    Local hosting servers setup and managed by Maciej himself.
+                  </div>
+                </li>
+            </ul>
+            <h3>York Universities Official Computer Science Club site.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-links">
+                <ul>
+                    <li><a href="http://cshub.ca">Visit the site</a></li>
+                    <li><a href="https://github.com/mlisbit/cshub_site">Github</a></li>
+                </ul>
+            </div>            
+          </div>
+
+          <div class="slideit-panel yuroverteamsite">
+            <img src="images/yuroverteam_thumb_1.png" alt="slide 1" />
+            <h3>York Universities Official Rover Team site.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-links">
+                <ul>
+                    <li><a href="http://roverteam.cs.yorku.ca/">Visit the site</a></li>
+                </ul>
+            </div>            
+          </div>
+
+
+          <div class="slideit-panel blueprint">
+            <img src="images/blueprint_thumb_2.png" alt="slide 1" />
+            <h3>Blueprint Properties Inc. site.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-links">
+                <ul>
+                    <li><a href="http://blueprintpropertiesinc.ca/">Visit the site</a></li>
+                </ul>
+            </div>       
+          </div>
+
+          <div class="slideit-panel towergame">
+            <img src="images/tower_thumb_1.png" alt="slide 1" />
+            <h3>Wander Tower Defense game.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-links">
+                <ul>
+                    <li><a href="https://github.com/mlisbit/wander-tower-def">Github</a></li>
+                </ul>
+            </div>       
+          </div>
+
+          <div class="slideit-panel snakegame">
+            <img src="images/snake_thumb_1.png" alt="slide 1" />
+            <h3>Simple Snake game.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-links">
+                <ul>
+                    <li><a href="https://github.com/mlisbit/pyqt_snake">Github</a></li>
+                </ul>
+            </div>       
+          </div>
+
+        </div> <!-- End slideit menu -->
+    
+        <!-- Ending scripts -->
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="static/slideit.js"></script>
+        <script>
+          $(document).slideit();
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.mixitup/2.1.3/jquery.mixitup.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation/foundation.orbit.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation/foundation.tooltip.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.22/skrollr.js"></script>
+        <script src="static/main.js"></script>
+        
+        
+    </body>
+</html>
+
+
+
