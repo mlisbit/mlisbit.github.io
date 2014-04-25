@@ -14,7 +14,12 @@ $(function(){
     $('.row').mixItUp({
         load: {
             filter: '.web'
-        }
+        },
+        callbacks: {
+            onMixEnd: function(state){
+                s.refresh($('.portfolioSlide'));
+		  }
+	   }
     });
 });
         
@@ -105,12 +110,14 @@ $slide.height(winH);
 s.refresh($('.homeSlide'));
 
 
-
 $('.filter').click(function() {
     console.log("filter has been hit!");
     s.refresh($('.portfolioSlide'));
 })
 
+if($('#Container').mixItUp('isLoaded')){
+	s.refresh($('.portfolioSlide'));
+}
 
 
 

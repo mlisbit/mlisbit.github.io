@@ -89,6 +89,7 @@
 
         $('.trigger').click(function() {
             var clicked = $(this);
+            console.log('trigger button hit')
             if (cssNumber($('#slideit-menu').css("left")) != 0) {
                 findMatchingClass(clicked, function() {
                     matching.show();

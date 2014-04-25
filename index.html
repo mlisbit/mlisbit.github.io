@@ -3,6 +3,7 @@
         <title>Maciej Lis</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
+
         <link rel="stylesheet" href="static/reset.css">
         <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -37,7 +38,7 @@
     <body>
       <div id="skrollr-body">
          <section id="slide-1" class="homeSlide"> <!-- Landing Page -->
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px" data-anchor-target="#slide-1">
                 <div class="hsContainer">
                     <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0.5" data-anchor-target="#slide-1 h2">
                         <h2>Maciej Lis</h2>
@@ -46,7 +47,7 @@
                 </div>
             </div>
         </section> <!-- End landing page -->
-        <section id="slide-2" class="portfolioSlide" style="padding-bottom: 20px;"> <!-- Landing Page -->
+        <section id="slide-2" class="portfolioSlide" style="padding-bottom: 20px; position: relative;"> <!-- Landing Page -->
 
           <div class="section-label row" id="portfolio">
               <h2>Portfolio</h2>
@@ -63,41 +64,24 @@
           </div>
               
           <div class="row"> <!--Hold the project thumbs -->
-                <div class="thumb small-6 medium-4 large-4 columns mix web end ">
-                    <!-- <span data-tooltip class="has-tip" title="Tooltips are awesome, you should totally use them!"></span> -->
-                    <div data-tooltip class="overlay trigger cshub toggle-slideit has-tip" title="York Universities Official Computer Science Club site."><i class="fa fa-eye"></i></div>
+                <div class="trigger cshub toggle-slideit thumb small-6 medium-4 large-4 columns mix web end ">
+                    <div data-tooltip class="overlay has-tip" title="York Universities Official Computer Science Club site."><i class="fa fa-eye"></i></div>
                     <img src="images/cshub_thumb_1.png" alt="screenshot">
                 </div>
-                <div class="thumb small-6 medium-4 large-4 columns mix web end">
-                    <div data-tooltip class="overlay trigger yuroverteamsite toggle-slideit has-tip" title="York Universities Official Rover Team site."><i class="fa fa-eye"></i></div>
+                <div class="trigger yuroverteamsite toggle-slideit thumb small-6 medium-4 large-4 columns mix web end">
+                    <div data-tooltip class="overlay has-tip" title="York Universities Official Rover Team site."><i class="fa fa-eye"></i></div>
                     <img src="images/yuroverteam_thumb_2.png" alt="screenshot">
                 </div>
-                <div class="thumb small-6 medium-4 large-4 columns mix web end">
-                    <div data-tooltip class="overlay trigger blueprint toggle-slideit has-tip" title="Blueprint Properties Inc. site."><i class="fa fa-eye"></i></div>
+                <div class="trigger blueprint toggle-slideit thumb small-6 medium-4 large-4 columns mix web end">
+                    <div data-tooltip class="overlay has-tip" title="Blueprint Properties Inc. site."><i class="fa fa-eye"></i></div>
                     <img src="images/blueprint_thumb_3.png" alt="screenshot">
                 </div>
-                <div class="thumb small-6 medium-4 large-4 columns mix games end">
-                    <div data-tooltip class="overlay trigger snakegame toggle-slideit has-tip" title="Snake game."><i class="fa fa-eye"></i></div>
+                <div class="trigger snakegame toggle-slideit thumb small-6 medium-4 large-4 columns mix games end">
+                    <div data-tooltip class="overlay has-tip" title="Snake game."><i class="fa fa-eye"></i></div>
                     <img src="images/snake_thumb_1.png" alt="screenshot">
                 </div>
-                <div class="thumb small-6 medium-4 large-4 columns mix games end">
-                    <div data-tooltip class="overlay trigger towergame toggle-slideit has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
-                    <img src="images/tower_thumb_1.png" alt="screenshot">
-                </div>
-                <div class="thumb small-6 medium-4 large-4 columns mix games end">
-                    <div data-tooltip class="overlay trigger towergame toggle-slideit has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
-                    <img src="images/tower_thumb_1.png" alt="screenshot">
-                </div>
-                <div class="thumb small-6 medium-4 large-4 columns mix games end">
-                    <div data-tooltip class="overlay trigger towergame toggle-slideit has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
-                    <img src="images/tower_thumb_1.png" alt="screenshot">
-                </div>
-                 <div class="thumb small-6 medium-4 large-4 columns mix games end">
-                    <div data-tooltip class="overlay trigger towergame toggle-slideit has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
-                    <img src="images/tower_thumb_1.png" alt="screenshot">
-                </div>
-                <div class="thumb small-6 medium-4 large-4 columns mix games end">
-                    <div data-tooltip class="overlay trigger towergame toggle-slideit has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
+                <div class="trigger towergame toggle-slideit thumb small-6 medium-4 large-4 columns mix games end">
+                    <div data-tooltip class="overlay has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
                     <img src="images/tower_thumb_1.png" alt="screenshot">
                 </div>
           </div>
@@ -107,6 +91,7 @@
        
         
         <div id="slideit-menu">
+
           <div class="slideit-panel cshub">
             <ul class="orbit" data-orbit data-options="timer: false;">
                 <li>
@@ -188,7 +173,6 @@
                 </ul>
             </div>       
           </div>
-
         </div> <!-- End slideit menu -->
     
         <!-- Ending scripts -->
