@@ -52,11 +52,9 @@ nav {
 }
 
 nav i {
-    position: relative;
-    top: 14px;
-    left: 18px;
-    font-size: 40px;
-    color: #ccc;
+    margin-top: 14px;
+    left: 15px;
+    font-size: 40px;   
 }
 
 nav .menu-button {
@@ -65,9 +63,10 @@ nav .menu-button {
     width: 70px;
     height: 70px;
     background: #151515;
+    color: #ccc;
 }
 
-nav i:hover {
+nav .menu-button:hover {
     color: #c2daeb;
 }
 
@@ -107,6 +106,7 @@ nav i:hover {
     padding: 0 8%;
     text-align: center
 }
+
 .hsContent h2 {
     font-family: penna;
     padding: 0px;
