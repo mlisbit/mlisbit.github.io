@@ -41,9 +41,10 @@ nav .menu ul a{
     color: inherit;
 }
 
-nav .menu ul a:hover{
+nav .menu ul a:hover, .nav-contact-link{
     color: #c2daeb;
 }
+
     
 nav {
     position: fixed; 
@@ -220,31 +221,16 @@ nav .menu-button:hover {
     cursor: pointer;
 }
 
-/*  SLIDE */
-#slideit-menu {
-    position: fixed;
-    top: 0;
-    left: -400px;
-    width: 400px;
-    height: 100%;
-    padding: 10px;
-    overflow-y: auto;
-}
-
-.slideit-panel {
-    display: none;
-}
-
-.slideit-panel h3 {
+.slidal-panel h3 {
     padding-top: 10px;
     color: #ccc;
 }
 
-.slideit-panel p {
+.slidal-panel p {
     color: #ccc;
 }
 
-.slideit-panel .project-links{
+.slidal-panel .project-links{
     text-decoration: none;
     font-family: 'Megrim', cursive;
     font-weight: bold;
@@ -252,21 +238,21 @@ nav .menu-button:hover {
     font-size: 18px;
     color: #ccc;
 }
-.slideit-panel .project-links ul{
+.slidal-panel .project-links ul{
     text-decoration: none;
     list-style-type: none;
     line-height: auto;
     margin-left: 0;
 }
 
-.slideit-panel .project-links ul li{
+.slidal-panel .project-links ul li{
     float: left;
     background: #147e6f;
     padding: 10px;
     margin-right: 10px;
 }
 
-.slideit-panel .project-links ul li a{
+.slidal-panel .project-links ul li a{
     text-decoration: none;
     color: #ccc;
 }
@@ -274,16 +260,6 @@ nav .menu-button:hover {
 html,body {
     position: relative;
     left: 0px;
-}
-
-#slide-it-overlay {
-    position: fixed; 
-    display: none;
-    z-index: 9999;
-    height: 100%;
-    width: 100%;
-    background: #ccc;
-    opacity: 0.1;
 }
 
 .orbit-container {

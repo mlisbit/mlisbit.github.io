@@ -8,6 +8,7 @@
         <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/5.2.2/css/foundation.css">
+        <link rel="stylesheet" type="text/css" href="static/slidal.css">
         <link rel="stylesheet" href="static/style.css">
     </head>
     
@@ -15,7 +16,7 @@
         <div class="menu">
             <ul> 
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact" class="nav-contact-link">Contact</a></li>
+                <div class="nav-contact-link">Contact</div>
                 <li><a href="#">Resume</a></li>
             </ul>
         </div>
@@ -64,23 +65,23 @@
           </div>
               
           <div class="row"> <!--Hold the project thumbs -->
-                <div class="trigger cshub toggle-slideit thumb small-6 medium-4 large-4 columns mix web end ">
+                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix web end " data-filter=".cshub">
                     <div data-tooltip class="overlay has-tip" title="York Universities Official Computer Science Club site."><i class="fa fa-eye"></i></div>
                     <img src="images/cshub_thumb_1.png" alt="screenshot">
                 </div>
-                <div class="trigger yuroverteamsite toggle-slideit thumb small-6 medium-4 large-4 columns mix web end">
+                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix web end" data-filter=".yuroverteamsite">
                     <div data-tooltip class="overlay has-tip" title="York Universities Official Rover Team site."><i class="fa fa-eye"></i></div>
                     <img src="images/yuroverteam_thumb_2.png" alt="screenshot">
                 </div>
-                <div class="trigger blueprint toggle-slideit thumb small-6 medium-4 large-4 columns mix web end">
+                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix web end" data-filter=".blueprint">
                     <div data-tooltip class="overlay has-tip" title="Blueprint Properties Inc. site."><i class="fa fa-eye"></i></div>
                     <img src="images/blueprint_thumb_3.png" alt="screenshot">
                 </div>
-                <div class="trigger snakegame toggle-slideit thumb small-6 medium-4 large-4 columns mix games end">
+                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix games end" data-filter=".snakegame">
                     <div data-tooltip class="overlay has-tip" title="Snake game."><i class="fa fa-eye"></i></div>
                     <img src="images/snake_thumb_1.png" alt="screenshot">
                 </div>
-                <div class="trigger towergame toggle-slideit thumb small-6 medium-4 large-4 columns mix games end">
+                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix games end" data-filter=".towergame">
                     <div data-tooltip class="overlay has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
                     <img src="images/tower_thumb_1.png" alt="screenshot">
                 </div>
@@ -90,9 +91,9 @@
       </div>
        
         
-        <div id="slideit-menu">
-
-          <div class="slideit-panel cshub">
+        <div id="slidal-menu">
+          <div style='color: white;' id='slidal-close'>X</div>
+          <div class="slidal-panel cshub">
             <ul class="orbit" data-orbit data-options="timer: false;">
                 <li>
                   <img src="images/cshub_thumb_1.png" alt="slide 1" />
@@ -129,7 +130,7 @@
             </div>            
           </div>
 
-          <div class="slideit-panel yuroverteamsite">
+          <div class="slidal-panel yuroverteamsite">
             <img src="images/yuroverteam_thumb_1.png" alt="slide 1" />
             <h3>York Universities Official Rover Team site.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -141,7 +142,7 @@
           </div>
 
 
-          <div class="slideit-panel blueprint">
+          <div class="slidal-panel blueprint">
             <img src="images/blueprint_thumb_2.png" alt="slide 1" />
             <h3>Blueprint Properties Inc. site.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -152,7 +153,7 @@
             </div>       
           </div>
 
-          <div class="slideit-panel towergame">
+          <div class="slidal-panel towergame">
             <img src="images/tower_thumb_1.png" alt="slide 1" />
             <h3>Wander Tower Defense game.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -163,7 +164,7 @@
             </div>       
           </div>
 
-          <div class="slideit-panel snakegame">
+          <div class="slidal-panel snakegame">
             <img src="images/snake_thumb_1.png" alt="slide 1" />
             <h3>Simple Snake game.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -173,13 +174,14 @@
                 </ul>
             </div>       
           </div>
-        </div> <!-- End slideit menu -->
+        </div> <!-- End slidal menu -->
     
         <!-- Ending scripts -->
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="static/slideit.js"></script>
+        
+        <script src="static/slidal.js"></script>
         <script>
-          $(document).slideit();
+          $(document).slidal();
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.3/jquery.mixitup.js"></script>
