@@ -2,6 +2,32 @@
 	{
 		"title": "York's Computer Science club site",
 		"mini_description": "a mini social network",
+		"thumb": "cshub_thumb_1.png",
+		"priority": 0,
+		"catagories": ["web"],
+		"images": [
+			{"path": "cshub_thumb_1.png", "caption": "fully responsive."},
+			{"path": "cshub_thumb_2.png", "caption": "Each member has their own personalised account."},
+			{"path": "cshub_thumb_3.png", "caption": "Built off Django."},
+			{"path": "cshub_thumb_4.png", "caption": "Servers located on-site in club room."}
+		],
+		"links": [
+			{"label":"View on Github", "link":"https://github.com/mlisbit/cshub_site", "icon":"fa-github"},
+			{"label":"View site", "link":"http://cshub.ca", "icon":"fa-globe"}
+		],
+		"info": [
+			{"label": "What I did", "list": [
+				"Data visualizations of all members and their added social media accounts on cshub home page.", 
+				"Users may create and edit their profile, and browse through others.", 
+				"Receive email notifications on new events, comment, and confirm attendance.",
+				"Responsive design allows comfortable use on mobile devices."
+			], "text": "As the technical exec of the Computer Science club, I built a mini social networking site for our members. Here are some of the features:"},
+			{"label": "tech stack", "list": ["Django", "Bootstrap", "JQuery", "sigma.js (for data visualization)", "AJAX"]}
+		]
+	},
+	{
+		"title": "Place Holder",
+		"mini_description": "site currently under construction",
 		"thumb": "yuroverteam_thumb_1.png",
 		"priority": 0,
 		"catagories": ["web", "games"],
@@ -17,16 +43,5 @@
 			{"label": "What I did", "list": ["pickle", "chickun", "pickle fried chicken"], "text": "little of this little of that yo."},
 			{"label": "tech stack", "list": ["Django", "Bootstrap", "JQuery", "sigma.js (for data visualization)"]}
 		]
-	},
-	{
-		"title": "York University Rover Team site",
-		"mini_description": "",
-		"thumb": "yuroverteam_thumb_1.png",
-		"date": 2013,
-		"description": "Official site for the computer science club at York University.",
-		"github": "github.com",
-		"site": "cshub.ca",
-		"priority": 0,
-		"catagories": ["web"]	
 	}
 ]
