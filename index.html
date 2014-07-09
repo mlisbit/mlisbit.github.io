@@ -2,206 +2,143 @@
     <head>
         <title>Maciej Lis</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-
-
-        <link rel="stylesheet" href="static/reset.css">
-        <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/5.2.2/css/foundation.css">
-        <link rel="stylesheet" type="text/css" href="static/slidal.css">
-        <link rel="stylesheet" href="static/style.css">
-    </head>
-    
-    <nav>  <!-- main page nav -->
-        <div class="menu">
-            <ul> 
-                <li><a href="#portfolio">Portfolio</a></li>
-                <div class="nav-contact-link">Contact</div>
-                <li><a href="#">Resume</a></li>
-            </ul>
-        </div>
-
-        <div class="contact"> <!-- Contact Menu -->
-            <div class="contact-pic"></div>
-            <div class="contact-panel">
-                <a href="https://github.com/mlisbit"><div class="contact-link"><center><p>Github</p></center></div></a>
-                <a href="https://www.linkedin.com/pub/maciej-lis/61/769/493"><div class="contact-link"><center><p>Linkedin</p></center></div></a>
-                <a href="https://twitter.com/mlisbit"><div class="contact-link"><center><p>Twitter</p></center></div></a>
-                <a href="mailto:mlisbit@gmail.com"><div class="contact-link"><center><p>Email</p></center></div></a>
-            </div>
-        </div>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://mrmrs.io/btns/css/btns.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         
-        <div class="menu-button">
-            <center><i class="fa fa-bars"></i></center>
-        </div>
-    </nav> <!-- End nav -->
-    
-    <body>
-      <div id="skrollr-body">
-         <section id="slide-1" class="homeSlide"> <!-- Landing Page -->
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px" data-anchor-target="#slide-1">
-                <div class="hsContainer">
-                    <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0.5" data-anchor-target="#slide-1 h2">
-                        <h2>Maciej Lis</h2>
-                        <p>Development/Design.</p>
-                    </div>
-                </div>
-            </div>
-        </section> <!-- End landing page -->
-        <section id="slide-2" class="portfolioSlide" style="padding-bottom: 20px; position: relative;"> <!-- Landing Page -->
-
-          <div class="section-label row" id="portfolio">
-              <h2>Portfolio</h2>
-          </div>
-          
-          <div class="row"> <!-- Hold the filter buttons  -->
-              <div class="container">
-                  <div class="filter filter-button" data-filter=".web">Web</div>
-                  <div class="filter filter-button" data-filter=".games">Games</div>
-                  <div class="filter filter-button" data-filter=".robotics">Robotics</div>
-                  <div class="filter filter-button" data-filter=".robotics">Hackathon Entries</div>
-                  <div class="filter filter-button" data-filter="all">All</div>
-              </div>
-          </div>
-              
-          <div class="row"> <!--Hold the project thumbs -->
-                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix web end " data-filter=".cshub">
-                    <div data-tooltip class="overlay has-tip" title="York Universities Official Computer Science Club site."><i class="fa fa-eye"></i></div>
-                    <img src="images/cshub_thumb_1.png" alt="screenshot">
-                </div>
-                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix web end" data-filter=".yuroverteamsite">
-                    <div data-tooltip class="overlay has-tip" title="York Universities Official Rover Team site."><i class="fa fa-eye"></i></div>
-                    <img src="images/yuroverteam_thumb_2.png" alt="screenshot">
-                </div>
-                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix web end" data-filter=".blueprint">
-                    <div data-tooltip class="overlay has-tip" title="Blueprint Properties Inc. site."><i class="fa fa-eye"></i></div>
-                    <img src="images/blueprint_thumb_3.png" alt="screenshot">
-                </div>
-                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix games end" data-filter=".snakegame">
-                    <div data-tooltip class="overlay has-tip" title="Snake game."><i class="fa fa-eye"></i></div>
-                    <img src="images/snake_thumb_1.png" alt="screenshot">
-                </div>
-                <div class="toggle-slidal thumb small-6 medium-4 large-4 columns mix games end" data-filter=".towergame">
-                    <div data-tooltip class="overlay has-tip" title="Tower defense game."><i class="fa fa-eye"></i></div>
-                    <img src="images/tower_thumb_1.png" alt="screenshot">
-                </div>
-          </div>
-
-        </section>
-      </div>
+        <link rel="stylesheet" href="styles/css/captionhover.css">
+        <link rel="stylesheet" href="styles/css/foundation.css">
+        <link rel="stylesheet" href="styles/css/style.css">
        
-        
-        <div id="slidal-menu">
-          <div style='color: white;' id='slidal-close'>X</div>
-          <div class="slidal-panel cshub">
-            <ul class="orbit" data-orbit data-options="timer: false;">
-                <li>
-                  <img src="images/cshub_thumb_1.png" alt="slide 1" />
-                  <div class="orbit-caption">
-                    Works on mobile devices.
-                  </div>
-                </li>
-                <li>
-                  <img src="images/cshub_thumb_2.png" alt="slide 2" />
-                  <div class="orbit-caption">
-                    Join the over 60 members, and create/edit your own profile!
-                  </div>
-                </li>
-                <li>
-                  <img src="images/cshub_thumb_3.png" alt="slide 3" />
-                  <div class="orbit-caption">
-                    Manage all content easily with Djano's CMS.
-                  </div>
-                </li>
-                <li>
-                  <img src="images/cshub_thumb_4.png" alt="slide 4" />
-                  <div class="orbit-caption">
-                    Local hosting servers setup and managed by Maciej himself.
-                  </div>
-                </li>
-            </ul>
-            <h3>York Universities Official Computer Science Club site.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="project-links">
-                <ul>
-                    <li><a href="http://cshub.ca">Visit the site</a></li>
-                    <li><a href="https://github.com/mlisbit/cshub_site">Github</a></li>
-                </ul>
-            </div>            
-          </div>
-
-          <div class="slidal-panel yuroverteamsite">
-            <img src="images/yuroverteam_thumb_1.png" alt="slide 1" />
-            <h3>York Universities Official Rover Team site.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="project-links">
-                <ul>
-                    <li><a href="http://roverteam.cs.yorku.ca/">Visit the site</a></li>
-                </ul>
-            </div>            
-          </div>
-
-
-          <div class="slidal-panel blueprint">
-            <img src="images/blueprint_thumb_2.png" alt="slide 1" />
-            <h3>Blueprint Properties Inc. site.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="project-links">
-                <ul>
-                    <li><a href="http://blueprintpropertiesinc.ca/">Visit the site</a></li>
-                </ul>
-            </div>       
-          </div>
-
-          <div class="slidal-panel towergame">
-            <img src="images/tower_thumb_1.png" alt="slide 1" />
-            <h3>Wander Tower Defense game.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="project-links">
-                <ul>
-                    <li><a href="https://github.com/mlisbit/wander-tower-def">Github</a></li>
-                </ul>
-            </div>       
-          </div>
-
-          <div class="slidal-panel snakegame">
-            <img src="images/snake_thumb_1.png" alt="slide 1" />
-            <h3>Simple Snake game.</h3>
-            <p></p>
-            <div class="project-links">
-                <ul>
-                    <li><a href="https://github.com/mlisbit/pyqt_snake">Github</a></li>
-                </ul>
-            </div>       
-          </div>
-        </div> <!-- End slidal menu -->
-    
-        <!-- Ending scripts -->
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        
-        <script src="static/slidal.js"></script>
-        <script>
-          $(document).slidal();
-        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.3/jquery.mixitup.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation/foundation.orbit.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation/foundation.tooltip.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.22/skrollr.js"></script>
-        <script src="static/main.js"></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-48973861-3', 'lis.io');
-          ga('send', 'pageview');
-        </script>  
-
+    </head>
+	<div class="fixed menu-bar">
+		<nav class="headroom top-bar contain-to-grid row" data-topbar data-options="scrolltop:false">
+		  <ul class="title-area">
+			<li class="name"></li>
+			<li class="toggle-topbar menu-icon"><a href="#"></a></li>
+		  </ul>
+		  <section class="top-bar-section">
+			<ul class="right">
+			  <li><a href="http://blog.lis.io">BLOG</a></li>
+			  <li><a href="#projects" onclick="">PROJECTS</a></li>
+			  <li><a href="#resume">RESUME</a></li>
+			  <li><a href="#about">ABOUT</a></li>
+			</ul>
+		  </section>
+		</nav>
+	</div>
+	
+    <body>
+    	<div class="row landing" data-0="background-position: 0% 0%;" data-500="background-position: 0% -50%;">
+    		<div class="content">
+    			<h1>Maciej Lis</h1>
+    			<div class="statement">Full stack web developer. Love for all things tech.</div>
+    		</div>	
+    	</div>
+    	
+    	<div class="row filter-btns" id="projects">
+    		<div class="container">
+    			<h2 class="section-heading">PROJECTS</h2>
+    			<div class="mixitup-layout"><i class=" fa fa-th-large"></i></div>
+    			<center>
+					<a href="#" class="filter btn btn--s btn--gray-dark" data-filter="all">All</a>	
+					<a href="#" class="filter btn btn--s btn--gray-dark" data-filter=".web">Web</a>	
+					<a href="#" class="filter btn btn--s btn--gray-dark" data-filter=".games">Games</a>	
+    				<a href="#" class="filter btn btn--s btn--gray-dark" data-filter=".hacks">Hackathon Entries</a>		
+    			</center>
+    			
+    		</div>
+    	</div>
+    	
+    	<div id="myModal" class="reveal-modal" data-reveal>
+			<h3 class="project-heading"></h3>
+			<div class="row project-info">
+				<div class="large-4 columns gallery"></div>
+				<div class="large-8 columns info"></div>	
+			</div>
+			<div class="row project-links">
+				<div class="right"></div>
+			</div>
+		</div> <!-- END myModal -->
+    	
+    	<div class="row"><ul class="mixitup-container list"></ul></div>
+    	<div class="row about-header" id="about">
+    		<div class="container">
+    			<h2 class="section-heading">ABOUT</h2>
+    		</div>
+    		<div class="medium-8 columns about">
+    			<img src="imgs/avatar.png" alt=""> I'm a 4th year computer science student at York University. I'm the technical executive of the computer science club and in previous years a senior software developer for the York University Rover Team (YURT). While a part of YURT, I travelled to Florida and Utah, competing in both the NASA Lunabotics Mining Competition and University Rover Challenge. I attend a lot of hackathons and love to code. <br> I build webapps, some games, and fiddle around with robots and hardware on occasion.
+    		</div>
+    		<div class="medium-4 columns contact">
+    			<div class="inner">
+    				<a href="https://github.com/mlisbit" class=""><i class="fa fa-github-alt fa-lg"></i></a>	
+					<a href="https://ca.linkedin.com/pub/maciej-lis/61/769/493/" class=""><i class="fa fa-linkedin fa-lg"></i></a>	
+					<a href="https://twitter.com/mlisbit" class=""><i class="fa fa-twitter fa-lg"></i></a>
+					<a href="mailto://mlisbit@gmail.com" class=""><i class="fa fa-envelope fa-lg"></i></a>
+    			</div>
+    				
+    		</div>
+    	</div>
+    	
+    	<div class="row resume-header" id="resume">
+    		<div class="container">
+    			<h2 class="section-heading">RESUME</h2>
+    		</div>
+    		<div class="medium-6 columns">
+    			<h3 class="resume-heading">Languages & Frameworks</h3>
+    			<ul class="skills">
+    				<li>Python <span>Django, PyQT</span></li>
+    				<li>Java <span>Swing, Play!</span></li>
+    				<li>Javascript <span>Node.js, JQuery, sigma.js</span></li>
+    				<li>HTML5 & CSS3 <span>BootStrap, Foundation, Less</span></li>
+    				<li>Bash</li>
+    				<li>Eiffel, MIPS, Verilog & C <span>(Used in classes I took)</span></li>
+    				<li>MongoDB, Redis & MySQL</li>
+    			</ul>
+    			<h3 class="resume-heading">Skills</h3>
+    			<ul class="skills">
+    				<li>Linux <span>(My only OS since highschool)</span></li>
+    				<li>PhotoShop and GIMP</li>
+    				<li>git</li>
+    			</ul>
+    			<h3 class="resume-heading">Awards</h3>
+    			<ul class="skills">
+    				<li>NASA Lunabotics Mining Competition 2013 <span>8th place</span></li>
+    				<li>University Rover Challenge 2012 <span>1st place</span></li>
+    				<li>University of Toronto Hackathon 2013 <span>Best use of a finacial API, presented by Orbis.</span></li>
+    				<li>University of Toronto Hackathon 2013 <span>Most creative service app, presented by Microsoft.</span></li>
+    				<li>Linkedin Toronto Hackday <span>Finalist</span></li>
+    				<li>Fastest growing club at York University <span>(A club I was a big help in starting)</span></li>
+    			</ul>
+    		</div>
+    		
+    		<div class="medium-6 columns sigma-parent" >
+    			<h3 class="resume-heading">Attendance</h3>
+    			<div id="sigma-container"></div>
+    			<div class="resume-btn">
+    				<a href="/extras/resume.pdf" class="btn btn--s btn--gray-dark">View resume as .PDF <i class="right fa fa-file-pdf-o fa-lg"></i></a>
+    			</div>
+    		</div>
+    	</div>
+    		
+    	<!-- <div class="space"></div> -->
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation/foundation.topbar.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation/foundation.reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/js/foundation/foundation.orbit.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.5/jquery.mixitup.min.js"></script>
+		<script src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>      
+		<script src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.26/skrollr.min.js"></script>
+		<script src="scripts/sigma.min.js"></script>
+		<script src="scripts/sigma.parsers.json.min.js"></script>
+		<script src="scripts/projects.js"></script>
+		<script src="scripts/main.js"></script>
     </body>
 </html>
+
 
 
 

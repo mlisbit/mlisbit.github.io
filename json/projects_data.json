@@ -1,0 +1,32 @@
+[
+	{
+		"title": "York's Computer Science club site",
+		"mini_description": "a mini social network",
+		"thumb": "yuroverteam_thumb_1.png",
+		"priority": 0,
+		"catagories": ["web", "games"],
+		"images": [
+			{"path": "yuroverteam_thumb_1.png", "caption": "just a little caption, dont mind me."},
+			{"path": "yuroverteam_thumb_1.png", "caption": "just a another little caption, dont mind me."}
+		],
+		"links": [
+			{"label":"View on Github", "link":"http://github.com", "icon":"fa-github"},
+			{"label":"View site", "link":"http://cshub.ca", "icon":"fa-globe"}
+		],
+		"info": [
+			{"label": "What I did", "list": ["pickle", "chickun", "pickle fried chicken"], "text": "little of this little of that yo."},
+			{"label": "tech stack", "list": ["Django", "Bootstrap", "JQuery", "sigma.js (for data visualization)"]}
+		]
+	},
+	{
+		"title": "York University Rover Team site",
+		"mini_description": "",
+		"thumb": "yuroverteam_thumb_1.png",
+		"date": 2013,
+		"description": "Official site for the computer science club at York University.",
+		"github": "github.com",
+		"site": "cshub.ca",
+		"priority": 0,
+		"catagories": ["web"]	
+	}
+]
