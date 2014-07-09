@@ -31,7 +31,7 @@
         function spawnOverlay() {
             isMoving = true;
             if (!overlay_selector.length) {
-                //the overlay element has not been added ye
+                //the overlay element has not been added yet
                 $('body').prepend("<div id="+settings.overlay_selector.slice(1)+"></div>");
                 overlay_selector = $(settings.overlay_selector);  
             }
@@ -83,16 +83,18 @@
         function closeMenu() {
             if (isOpen || menu_selector.is(':visible') || (!isOpen && (window.innerWidth > 400) && menu_selector.css("left") === "0px")) {
                 if (!isMobile()) {
-                    menu_selector.stop( true, true ).animate({left: '-'+settings.width}, settings.animation_speed);
-                    $('body', 'html').stop( true, true ).animate({left: '0px'}, settings.animation_speed, function() {
-                        menu_selector.hide();
-                    });
+                    menu_selector.stop( true, true ).animate({left: '-'+settings.width}, settings.animation_speed, function() {
+						menu_selector.hide();
+						hideAllClasses();
+					});
+                    $('body', 'html').stop( true, true ).animate({left: '0px'}, settings.animation_speed, function() {});
                     killOverlay();
                 } else {
+					hideAllClasses();
                     menu_selector.hide();
                     killOverlay();
                 }
-                hideAllClasses();
+                
                 isOpen = false;
                 settings.onClose();
             }   
