@@ -2,7 +2,7 @@
 $(document).foundation();
 
 //instantiate headroom.js
-var myElement = document.querySelector("nav");
+var myElement = document.querySelector(".menu-bar");
 var headroom  = new Headroom(myElement);
 headroom.init()
 

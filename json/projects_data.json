@@ -28,11 +28,11 @@
 	{
 		"title": "YorkU Rover Team Member",
 		"mini_description": "developing for robots",
-		"thumb": "yuroverteam_thumb_1.png",
+		"thumb": "yuroverteam_robot_1.JPG",
 		"priority": 0,
 		"catagories": [],
 		"images": [
-			{"path": "yuroverteam_thumb_1.png"}
+			{"path": "yuroverteam_robot_1.png"}
 		],
 		"links": [
 			{"label":"Spider streamer on github", "link":"https://github.com/matthewn4444/QRi-Fi", "icon":"fa-github"},
@@ -119,11 +119,11 @@
 	{
 		"title": "Pure West Music mobile site",
 		"mini_description": "a company site",
-		"thumb": "yuroverteam_thumb_1.png",
+		"thumb": "purewest_thumb.png",
 		"priority": 0,
 		"catagories": ["web"],
 		"images": [
-			{"path": "yuroverteam_thumb_1.png"}
+			{"path": "purewest_thumb.png"}
 		],
 		"links": [
 			{"label":"View mobile site", "link":"http://purewestmusic.com/testtest/", "icon":"fa-globe"}
@@ -137,14 +137,15 @@
 	{
 		"title": "Red Marble Game",
 		"mini_description": "a Mars simulation",
-		"thumb": "yuroverteam_thumb_1.png",
+		"thumb": "spaceapps.png",
 		"priority": 0,
 		"catagories": ["games", "hacks"],
 		"images": [
-			{"path": "yuroverteam_thumb_1.png"}
+			{"path": "spaceapps.png"}
 		],
 		"links": [
-			{"label":"View on github", "link":"https://github.com/mlisbit/red-marble", "icon":"fa-github"}
+			{"label":"View on github", "link":"https://github.com/mlisbit/red-marble", "icon":"fa-github"},
+			{"label":"View hackathon page", "link":"https://2013.spaceappschallenge.org/", "icon":"fa-globe"}
 		],
 		"info": [
 			{"label": "info", "text": "Done during the NASA Space Apps Challenge Hackathon. The goal was to simulate an environment that represents the weather patterns of Mars, so we chose to make a game. Players must survive the elements, and build structures in hopes of colonizing the planet."},
@@ -155,11 +156,11 @@
 	{
 		"title": "at.me",
 		"mini_description": "turn humans to ATMs",
-		"thumb": "yuroverteam_thumb_1.png",
+		"thumb": "uft_hacks.png",
 		"priority": 0,
 		"catagories": ["hacks"],
 		"images": [
-			{"path": "yuroverteam_thumb_1.png"}
+			{"path": "uft_hacks.png"}
 		],
 		"links": [],
 		"info": [
@@ -171,11 +172,11 @@
 	{
 		"title": "PixPocket",
 		"mini_description": "design and print your own wallet",
-		"thumb": "yuroverteam_thumb_1.png",
+		"thumb": "linkedin_hackday.png",
 		"priority": 0,
 		"catagories": ["hacks"],
 		"images": [
-			{"path": "yuroverteam_thumb_1.png"}
+			{"path": "linkedin_hackday.png"}
 		],
 		"links": [
 			{"label":"Visit Hackathon Page", "link":"http://hackday.linkedin.com/toronto/2013.html", "icon":"fa-github"}
@@ -189,11 +190,11 @@
 	{
 		"title": "QRifi",
 		"mini_description": "connect to wifi by scanning QR codes.",
-		"thumb": "yuroverteam_thumb_1.png",
+		"thumb": "yhack.png",
 		"priority": 0,
 		"catagories": ["hacks"],
 		"images": [
-			{"path": "yuroverteam_thumb_1.png"}
+			{"path": "yhack.png"}
 		],
 		"links": [
 			{"label":"View on github", "link":"https://github.com/matthewn4444/QRi-Fi", "icon":"fa-globe"}
