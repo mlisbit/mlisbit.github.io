@@ -12,7 +12,7 @@ var expandend_menu = false;
 $(".menu-icon a").on("click", function() {
 	expandend_menu = !expandend_menu;
 	if (expandend_menu) {
-		headroom.offset = 2000
+		headroom.offset = 10000
 	} else {
 		headroom.offset = 1
 	}
