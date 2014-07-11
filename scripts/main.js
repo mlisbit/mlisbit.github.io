@@ -2,10 +2,25 @@
 $(document).foundation();
 
 //instantiate headroom.js
-$("nav").headroom();
+var myElement = document.querySelector("nav");
+var headroom  = new Headroom(myElement);
+headroom.init()
+
+//fix mobile navbar attempted collapse.
+//disable headroom if nav menu is showing.
+var expandend_menu = false;
+$(".menu-icon a").on("click", function() {
+	expandend_menu = !expandend_menu;
+	if (expandend_menu) {
+		headroom.offset = 2000
+	} else {
+		headroom.offset = 1
+	}
+})
 
 //prevent filter button hrefs scrolling to top
 $('a.filter').click(function(e) {
+	
 	 return false; 
 	 e.preventDefault(); 
 });

@@ -81,7 +81,7 @@ h2.section-heading {
 	text-align: center;
 	padding-top: 15px;
 }
-.headroom {transition: all .2s ease-in-out;}
+.headroom {transition: all .3s ease-in-out;}
 		.headroom--unpinned {top: -100px;}
 		.headroom--pinned {top: 0;}
 
