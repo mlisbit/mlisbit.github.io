@@ -42,7 +42,9 @@ var createGallery = function(data) {
 		var current = data['images'][i];
 		var thumb = $('<li>');
 		thumb.append('<img src="'+ gallery_location + current.path +'">')
-		thumb.append('<div class="orbit-caption">'+current.caption+'</div>')
+		if (current.caption) {
+			thumb.append('<div class="orbit-caption">'+current.caption+'</div>')
+		}
 		thumb.appendTo('#myModal .gallery .orbit')
 	}
 }
