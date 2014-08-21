@@ -26,10 +26,12 @@ $('a.filter').click(function(e) {
 });
 
 //contact button container always in center of about.
+/*
 $('.contact').height($('.about').height());
 $( window ).resize(function() {
 	$('.contact').height($('.about').height());
 });
+*/
 
 //single page scroll yo.
 $('nav section ul li a').on('click', function() {

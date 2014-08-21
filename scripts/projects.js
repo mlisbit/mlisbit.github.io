@@ -95,7 +95,7 @@ var mixinOject = function(key, data) {
 	, 	mini_description = data['mini_description']
 	,	catagories = data['catagories'].join(" ");
 
-	return $('<li class="small-12 medium-6 large-4 columns end mix '+catagories+'" data-projectid="'+key+'"><figure><div><img src="' +thumb_location+thumb+ '" alt=""></div><figcaption><h3>'+title+'</h3><span>'+mini_description+'</span></figcaption></figure></li>')
+	return $('<li class="small-12 medium-6 large-4 columns end mix '+catagories+'" data-projectid="'+key+'"><figure><div><img src="' +thumb_location+thumb+ '" alt=""></div><figcaption><h3>'+title+'</h3><center><span>'+mini_description+'</span></center></figcaption></figure></li>')
 }
 
 var generateModal = function(key, data) {
