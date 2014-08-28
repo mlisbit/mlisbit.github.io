@@ -57,9 +57,10 @@ sigma.parsers.json('/json/sigma_data.json', {
   });
 
 //check if clients on mobile to initialize skrollr
+/*
  var isDesktop = window.screenX != 0 || (screen.width - $(window).width() >= 20 && screen.height - $(window).height() >= 20) || ($(window).width() >= 900 && $(window).height() >= 800)
 if (isDesktop) {var s = skrollr.init();}
-
+*/
 
 //google analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
