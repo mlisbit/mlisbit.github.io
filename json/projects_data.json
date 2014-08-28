@@ -1,6 +1,25 @@
 [
 	{
-		"title": "York's Computer Science club site",
+		"title": "openYorkU API",
+		"mini_description": "Unofficial RESTful API for York University",
+		"thumb": "cshub_thumb_4.png",
+		"priority": 0,
+		"catagories": ["web"],
+		"images": [
+			{"path": "cshub_thumb_4.png"}
+		],
+		"links": [
+			{"label":"View on Github", "link":"https://github.com/mlisbit/openYorkU-API", "icon":"fa-github"},
+			{"label":"View site", "link":"http://openyorku.com", "icon":"fa-globe"}
+		],
+		"info": [
+			{"label": "About", "text": "York University is the 3rd largest university in Canada, and with the recent addition of Lassonde school of Engineering - it's about time something like this existed. Though I doubt openYorkU will become officially adapted, I hope York will see the potential and allow for easier access to their information. <br><br> With open data, students may create brilliant apps around it, and profs will have a large data set to work with and discover things otherwise overlooked. Tying this type of service around clubs, news and events; information will travel faster throughout the campus. The world will become aware of all the great things York University offers."},
+			{"label": "progress", "list": ["lots of RESTful API functionality working: (POST, PUT, DEL, GET), queries, limits, filters, authentication middleware, error middleware, tracking middleware.", "working parsers to update information", "<div style='color: red'>need to set up official site</div>", "<div style='color: red'>need to set up official server</div>", "<div style='color: red'>need to create better way of parsing information</div>"]},
+			{"label": "tech stack", "list": ["nodejs", "mongodb", "python"]}
+		]
+	},
+	{
+		"title": "cshub.ca: Yorks CS club",
 		"mini_description": "a mini social network",
 		"thumb": "cshub_thumb_1.png",
 		"priority": 0,
@@ -26,8 +45,8 @@
 		]
 	},
 	{
-		"title": "YorkU Rover Team Member",
-		"mini_description": "developing for robots",
+		"title": "York University Rover Team",
+		"mini_description": "Software development: building robots",
 		"thumb": "yuroverteam_robot_1.JPG",
 		"priority": 0,
 		"catagories": [],
@@ -46,8 +65,8 @@
 		]
 	},
 	{
-		"title": "Blueprint Properties Inc",
-		"mini_description": "a company website",
+		"title": "BlueprintPropertiesInc.com",
+		"mini_description": "Blueprint Properties Inc. company website",
 		"thumb": "blueprint_thumb_2.png",
 		"priority": 0,
 		"catagories": ["web"],
