@@ -95,7 +95,7 @@ var mixinOject = function(key, data) {
 	, 	mini_description = data['mini_description']
 	,	catagories = data['catagories'].join(" ");
 
-	return $('<li class="small-12 medium-6 large-4 columns end mix '+catagories+'" data-projectid="'+key+'"><figure><div><img src="' +thumb_location+thumb+ '" alt=""></div><figcaption><h3>'+title+'</h3><center><span>'+mini_description+'</span></center></figcaption></figure></li>')
+	return $('<li tabindex="0" class="small-12 medium-6 large-4 columns end mix '+catagories+'" data-projectid="'+key+'"><figure><div><img src="' +thumb_location+thumb+ '" alt=""></div><figcaption><center><h3>'+title+'</h3></center><center><span>'+mini_description+'</span></center></figcaption></figure></li>')
 }
 
 var generateModal = function(key, data) {
@@ -130,10 +130,10 @@ $(document).ready(function() {
 		console.log( "error with projects json" );
 	  })
 	
-	$(document).on("click", project_link,function() {
-		console.log('clicked!')
-		generateModal($(this).attr('data-projectid'));
-		
+	$(document).on("click keypress", project_link, function(e) {
+		if (e.which === 13 || e.type === 'click') {
+			generateModal($(this).attr('data-projectid'));
+		}
 	})
 	projects.complete(function() {
 		var layout = 'list'
@@ -152,23 +152,25 @@ $(document).ready(function() {
 			}
 		});
 		
-		$(change_layout).on('click', function(){
-			if(layout == 'list'){
-			  layout = 'grid cs-style-4';
-			  $('figcaption').hide()
-			  $(change_layout).html('<i class=" fa fa-bars"></i>');
-			  $(projects_container).mixItUp('changeLayout', {
-				containerClass: layout // change the container class to "grid"
-			  }, function() {
-			  	$('figcaption').show()
-			  });
-			} else {
-			  layout = 'list';
-			  //$(change_layout).text('Grid'); // Update the button text
-			  $(change_layout).html('<i class=" fa fa-th-large"></i>');
-			  $(projects_container).mixItUp('changeLayout', {
-				containerClass: layout // Change the container class to 'list'
-			  });
+		$(change_layout).on('click keypress', function(e){
+			if (e.which === 13 || e.type === 'click') {
+				if(layout == 'list'){
+				  layout = 'grid cs-style-2';
+				  $('figcaption').hide()
+				  $(change_layout).html('<i class=" fa fa-bars"></i>');
+				  $(projects_container).mixItUp('changeLayout', {
+					containerClass: layout // change the container class to "grid"
+				  }, function() {
+				  	$('figcaption').show()
+				  });
+				} else {
+				  layout = 'list';
+				  //$(change_layout).text('Grid'); // Update the button text
+				  $(change_layout).html('<i class=" fa fa-th-large"></i>');
+				  $(projects_container).mixItUp('changeLayout', {
+					containerClass: layout // Change the container class to 'list'
+				  });
+				}
 			}
 		  }); //end change layout
 	});
